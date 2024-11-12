@@ -1,4 +1,8 @@
 import termcolor as tc
+import argparse
+parser = argparse.ArgumentParser()
+parser.add_argument("filename")
+args = parser.parse_args()
 
 class Errors: ...
 
@@ -39,7 +43,7 @@ def collect_brace_content(text):
     
     return content_list
 
-def wrk(fname:str='main.fsc'):
+def wrk(fname:str):
     with open(fname, 'rt+') as f:
         code:str = f.read()
 
@@ -69,4 +73,4 @@ def wrk(fname:str='main.fsc'):
         else:
             rse(InvalidStatement, f'An invalid statement {line} was found')            
 
-if __name__ == '__main__': wrk()        
+if __name__ == '__main__': wrk(args.filename)        
