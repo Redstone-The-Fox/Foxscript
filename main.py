@@ -60,7 +60,7 @@ def wrk(fname:str='main.fsc'):
                 collect_brace_content(line[6:].replace('"', ''))
                 for i in collect_brace_content(line[6:].replace('"', '')):
                     thing_to_print = line[6:].replace('"', '').replace('{'+i+'}', variables[i])
-                print(str(thing_to_print[1:]), end='')
+                print(str(thing_to_print), end='')
             else: rse(DuoQuotesNotFound, f'Double Quotation Marks not found at a {tc.colored('print', 'cyan')} statement')
     #-----------
         elif line[0] == '-' and line[1] == '-':
