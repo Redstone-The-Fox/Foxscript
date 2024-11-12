@@ -1,2 +1,2 @@
 -- Example 'Hello, World!' FoxScript(1.0) Program
-printl "Hello, World!"
+printl "{example_testvar}"
