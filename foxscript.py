@@ -43,10 +43,7 @@ def collect_brace_content(text):
     
     return content_list
 
-thing_to_print = ''
-
 def wrk(fname:str):
-    global thing_to_print
     with open(fname, 'rt+') as f:
         code:str = f.read()
 
