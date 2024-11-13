@@ -68,6 +68,9 @@ def wrk(fname:str):
         elif line[0] == '-' and line[1] == '-':
             ...
     #-----------
+        elif line[0:4] == 'let ':
+            lsplit = line.replace('let ', '').split(' = ')
+            variables[lsplit[0]] = lsplit[1].replace('"', '')
         else:
             rse(InvalidStatement, f'An invalid statement {line} was found')            
 

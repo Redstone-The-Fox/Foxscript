@@ -1,2 +1,3 @@
 -- Example 'Hello, World!' FoxScript(1.0) Program
-printl "{example_testvar}"
+let x = "Hello, World!"
+printl "{x}"
