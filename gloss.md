@@ -2,7 +2,6 @@
 
 ### Comments
 `--` is what you use to mark comments
-(Example): `-- This is a comment!`
 
 ### `print` and `printl`
 Use `printl` when you want to output text.
